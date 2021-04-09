@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#header {
+	background-color: var(--modrinth-main);
+	display: flex;
+	justify-content: center;
+}
+
+#header .descr {
+	color: var(--light-font-color);
+	font-size: 1.5em;
+	font-weight: thin;
+	padding: 12px;
+}
+
+#main {
+	background-color: var(--main-color);
+	min-height: 100vh;
+}
+
+#footer {
+	background-color: var(--footer-color);
+	color: var(--light-font-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+
+#footer a {
+	color: var(--light-font-color);
+	text-decoration: none;
+	transition: .2s;
+}
+
+#footer a:hover {
+	text-shadow: 0 0 5px var(--light-font-color);
+}
+
+#result {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+#update {
+	background-color: var(--modrinth-main);
+	border: 2px solid transparent;
+	border-radius: 0.25rem;
+	color: var(--light-font-color);
+	font-weight: bold;
+	outline: 0;
+	padding: .5rem 1rem;
+	width: 256px;
+}
+
+#update:hover {
+	background-color: #53923e;
+	cursor: pointer;
+}
+
+#logo-checkbox {
+	display: none;
+}
+
+#logo-label {
+	background-color: var(--input-inactive);
+	border-radius: 0.25rem;
+	border: solid 2px transparent;
+	color: #4a5568;
+	font-weight: bold;
+	padding: .5rem 1rem;
+	transition: .2s;
+	width: 128px;
+}
+
+#logo-label:before {
+	content: '✖ ';
+}
+
+#logo-label:hover {
+	background-color: var(--input-hover);
+	cursor: pointer;
+}
+
+#logo-checkbox:checked + #logo-label {
+	background-color: var(--modrinth-main);
+	color: var(--light-font-color);
+}
+
+#logo-checkbox:checked + #logo-label:before {
+	content: '✅ ';
+}
+
+.generator-pane {
+	display: flex;
+	flex-direction: column;
+	padding: 75px 200px;
+	gap: 16px;
+}
+
+.generator-pane input {
+	background-color: var(--input-inactive);
+	max-width: 450px;
+	padding: .5rem 1rem;
+	border-radius: 0.25rem;
+	border: solid 2px transparent;
+	outline: 0;
+}
+
+.generator-pane input:hover {
+	background-color: var(--input-hover);
+}
+
+.generator-pane input:focus {
+	background-color: var(--main-color);
+	border: solid 2px #c8cdd3;
+}
+
+.result-pic {
+	cursor: pointer;
+	width: 100%;
+}
+
+@media screen and (max-width:800px) {
+  	.generator-pane {
+		padding: 15px;
+	}
+}
+
+:root {
+	--input-inactive: #edf2f7;
+	--input-hover: #e0e7ee;
+	--footer-color: #000217;
+	--header-color: #0c0d17;
+	--main-color: #f9f9f9;
+	--light-font-color: #f1f1f1;
+	--modrinth-main: #5da545;
+}

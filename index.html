@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>shields.io generator for modrinth</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header id="header">
+		<span class="descr">shields.io generator for modrinth</span>
+	</header>
+	<main id="main">
+		<div class="generator-pane">
+			<h1>Link Generator shields.io for Modrinth</h1>
+			<label for="modid">Project ID: </label>
+			<input type="text" id="modid" class="text-input" placeholder="AZomiSrC">
+			<label for="shield-type">Type: </label>
+			<input id="shield-type" list="shield-type-list" name="shield-type" placeholder="downloads">
+			<datalist id="shield-type-list">
+				<option value="downloads">
+				<option value="followers">
+				<option value="status">
+			</datalist>
+			<input type="checkbox" id="logo-checkbox" checked="" name="use-logo">
+			<label for="logo-checkbox" id="logo-label">Use logo</label>
+			<button id="update">Get</button>
+			<div id="result">
+				<h2>Result</h2>
+				<span>You can copy the link below or click on the desired badge style to copy the link with that style. If you selected the "Use logo" option, it will not be added to the URL field. You will need to click on the image to copy the full link. The badge size is the same as on GitHub.</span>
+				<span><b>URL: </b><span id="url">empty</span></span>
+					<img id="result-pic-plastic" class="result-pic" src="" alt="Plastic: not loaded yet!">
+					<img id="result-pic-flat" class="result-pic" src="" alt="Flat: not loaded yet!">
+					<img id="result-pic-flat-square" class="result-pic" src="" alt="Flat-Square: not loaded yet!">
+					<img id="result-pic-for-the-badge" class="result-pic" src="" alt="For the badge: not loaded yet!">
+					<img id="result-pic-social" class="result-pic" src="" alt="Social: not loaded yet!">
+			</div>
+		</div>
+	</main>
+	<footer id="footer">
+		<div id="author"><a href="https://github.com/vetustus">by vetustus</a></div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
