@@ -3,6 +3,8 @@ Link generator shields.io for Modrinth
 
 You can use this page to generate icons for your github repository to show everyone how many downloads your project has on Modrinth.
 
+**Now you can use this: https://modrinth-utils.vercel.app/**
+
 ## Examples
 
 ### Downloads
